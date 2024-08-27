@@ -15,8 +15,7 @@ class Product:
     def __str__ (self):
         return f'{self.name}, {self.weight}, {self.category}'
 
-class Shop:
-    # def __init__(self):
+class Shop:   
     __file_name = '2Products.txt'
 
     def get_products(self):
@@ -33,20 +32,6 @@ class Shop:
                 file = open(self.__file_name, 'a')
                 file.write(f"{product}\n")
                 file.close()
-        # for product in products:
-        #     if product.name not in self.get_products():
-        #         file = open(self.__file_name, 'a')
-        #         # file.writelines(f'{product }\n' )
-        #         file.write(f"{product}\n")
-        #         # file = str(product() +'\n')
-        #         file.close()
-
-            #     self.file = open(self.__file_name, 'r')
-            # if product.name not in self.file.read():
-            #     self.file = open(self.__file_name, 'a')
-                  # добавлен \n для разделения
-                                                          # строки в файле 2Products
-
             else:
                 print(f'Продукт {product.name},{product.weight}, {product.category} уже есть в магазине')
 
